@@ -1,0 +1,30 @@
+[project]
+name = "hr-demo"
+version = "0.1.0"
+description = "Operator scripts and CLI client for the HrAssistant AgentCore project"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.43.0",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+chat = "hr_demo.chat:main"
+guardrail = "hr_demo.guardrail:main"
+hr-db = "hr_demo.hr_db:main"
+kb-data = "hr_demo.kb_data:main"
+rag-eval = "hr_demo.rag_eval:main"
+stack = "hr_demo.stack:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["uv_build>=0.9.9,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

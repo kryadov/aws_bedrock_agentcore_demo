@@ -1,0 +1,27 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "FindKnowledgeBaseByName",
+      "Effect": "Allow",
+      "Action": "bedrock:ListKnowledgeBases",
+      "Resource": "*"
+    },
+    {
+      "Sid": "SearchHrDocs",
+      "Effect": "Allow",
+      "Action": "bedrock:Retrieve",
+      "Resource": "arn:aws:bedrock:us-west-2:*:knowledge-base/*"
+    },
+    {
+      "Sid": "ApplyGuardrail",
+      "Effect": "Allow",
+      "Action": "bedrock:ApplyGuardrail",
+      "Resource": [
+        "arn:aws:bedrock:us-west-2:*:guardrail/*",
+        "arn:aws:bedrock:*:*:guardrail-profile/*",
+        "arn:aws:bedrock:*::guardrail-profile/*"
+      ]
+    }
+  ]
+}

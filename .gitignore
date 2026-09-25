@@ -1,0 +1,8 @@
+.env
+.sessions.json
+.venv/
+__pycache__/
+*.py[cod]
+bash.exe.stackdump
+.pytest_cache/
+docs/demo/frames/

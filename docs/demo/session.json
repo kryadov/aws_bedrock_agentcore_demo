@@ -1,0 +1,35 @@
+{
+  "runtime": "IcAgentcoreDemo_HrAssistant-Vxwguw3KJv",
+  "session": "demo-06e50bdd7860411d8849d6674236fac4",
+  "turns": [
+    {
+      "question": "Show me the employees by department",
+      "answer": [
+        "Here are the employees grouped by department (note: sensitive details like salary, SSN, bank info, and home addresses are withheld per policy):\n\n| Department | Name | Title | Manager | Location | Hired On |\n|---|---|---|---|---|---|\n| Customer Success | Chen Wei | Customer Success Manager | Dana Whitfield | New York | 2022-01-10 |\n| Data Platform | Alice Moreno | Senior Data Engineer | Ben Carter | San Francisco | 2020-06-01 |\n| Data Platform | Ben Carter | Head of Data Platform | Dana Whitfield | Oakland | 2018-09-17 |\n| Executive | Dana Whitfield | Chief Executive Officer | — | San Francisco | 2016-03-01 |\n\nNote: this directory listing excludes confidential project teams. Let me know if you'd like details on a specific team or person."
+      ],
+      "seconds": 20.0
+    },
+    {
+      "question": "Which of them is in New York?",
+      "answer": [
+        "Based on the directory, **Chen Wei** (Customer Success Manager, Customer Success team, reports to Dana Whitfield) is located in **New York**."
+      ],
+      "seconds": 3.7
+    },
+    {
+      "question": "What's his salary?",
+      "answer": [
+        "  [guardrail: input] ",
+        "Sorry, I can't help with that request. For HR questions about specific people, contact hr@quibblefrost.example."
+      ],
+      "seconds": 0.9
+    },
+    {
+      "question": "OK, and what are our security requirements for remote work?",
+      "answer": [
+        "According to **03-remote-work-and-equipment.md**, the security basics for remote work are:\n\n- **Full-disk encryption** mandatory\n- **Screen lock after 5 minutes** mandatory\n- **Okta Verify MFA** mandatory\n- **Never** store customer data on personal devices or personal cloud storage\n\nAlso relevant: lost or stolen equipment must be reported to IT within **24 hours** (it-help@quibblefrost.example).\n\nLet me know if you need details on the hybrid model or equipment policy too."
+      ],
+      "seconds": 8.2
+    }
+  ]
+}

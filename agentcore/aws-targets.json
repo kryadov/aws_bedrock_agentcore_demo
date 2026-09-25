@@ -1,0 +1,8 @@
+[
+  {
+    "name": "default",
+    "description": "Set to the current account by `uv run stack up`",
+    "account": "123456789012",
+    "region": "us-west-2"
+  }
+]

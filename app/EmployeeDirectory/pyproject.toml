@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "EmployeeDirectory"
+version = "0.1.0"
+description = "AgentCore Gateway Lambda target: employee directory tools over the RDS Data API"
+requires-python = ">=3.10"
+dependencies = [
+    "boto3>=1.40.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
